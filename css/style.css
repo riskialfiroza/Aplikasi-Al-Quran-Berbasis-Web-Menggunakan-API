@@ -1,0 +1,81 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+#atas-ayat {
+    margin-top: 90px;
+}
+
+.card-body {
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    background-color: rgb(214, 209, 209);
+    border-radius: 8px;
+}
+#cover{
+    background:#92B4EC;
+    border-bottom:2px solid #f0f0f0;
+     color: #f0f0f0;
+}
+
+a {
+    text-decoration: none;
+}
+table{
+    align-items: center;
+    align-content: center; 
+    font-size: 15px;  
+    margin-bottom: 50px;
+    margin-left: 25px;
+}
+.card-surah {
+    display: none;
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 30px 0;
+    padding: 15px;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0;
+    margin-top: 0;
+}
+.statistik-title {
+    color: #14527B;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+.statistik-subtitle {
+    color: #98AFC3;
+    font-size: 1.15rem;
+    margin-bottom: 25px;
+}
+
+.data-title {
+    color: #98AFC3;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.data-value {
+    color: #14527B;
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+.data-value-ayat {
+    color: #14527B;
+    font-size: 3.0rem;
+    margin-bottom: 0px;
+}
+.flex-container {
+   text-align: center;
+    align-items: center;
+}
+.flex-container > div {
+    flex: 0 0 50%;
+    
+}

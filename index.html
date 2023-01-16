@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL-QURAN</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <section id="cover">
+        <div class="container text-center">
+            <div class="container">
+                <img class="mt-3 " src="img/al-quran.png" width="20%" alt="Kitab Suci Al-Qur'an Digital"> <img
+                    class="hidden-xs"><br>
+                <div class=" mb-3 text-center">
+                    <h1><strong>Al Qur'an Online</strong></h1>
+                    <p>Dengarkan bacaan Al Qur'an perayat dan rasakan ketenangan dalam jiwa</p>
+                    <div class="d-flex text-center check">
+                        <input class="form-control me-3 test" id="surah" type="number" placeholder="Nomor Surah" aria-label="Search">
+                        <input class="form-control me-3 test " id="ayat" type="number" placeholder="Ayat Surah" aria-label="Search">
+                        <button class="btn btn-warning" id="search">Search</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <div class="card-surah" id="">
+        <div class="flex-container">
+            <div class="mb-3">
+                <p class="data-title">Nama Surah</p>
+                <p class="data-value isi-nama"></p>
+            </div>
+            <div class="mb-3">
+                <p class="data-title">Jumlah Ayat</p>
+                <p class="data-value nomor-ayat"></p>
+            </div>
+            <div>
+                <p class="data-title">No Ayat yang sedang dicari</p>
+                <p class="data-value nomor-2"></p>
+            </div>
+            <div class="mb-3">
+                <p class="data-value-ayat isi-ayat"></p>
+            </div>
+            <div>
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                    Browsermu tidak mendukung tag audio, upgrade donk!
+                </audio>
+            </div>
+        </div>
+    </div>
+    <div class="container col-xs-12  mt-3">
+        <h2 class="text-center" style="color: #92B4EC;"><strong>List Surah</strong></h2>
+        <table cellpadding="1" cellspacing="1">
+            <tbody>
+                <tr>
+                    <td>1. Al-Fatihah (7 ayat)</td>
+                    <td>24. An-Nur (64&nbsp;ayat)</td>
+                    <td>47. Muhammad (38&nbsp;ayat)</td>
+                    <td>70. Al-Ma&#39;arij (44&nbsp;ayat)</td>
+                    <td>93. Adh-Dhuha (11&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>2. Al-Baqarah (286 ayat)</td>
+                    <td>25. Al-Furqan (77&nbsp;ayat)</td>
+                    <td>48. Al-Fath (29&nbsp;ayat)</td>
+                    <td>71. Nuh (28&nbsp;ayat)</td>
+                    <td>94. Al-Insyirah (8&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>3. Ali-Imran (200&nbsp;ayat)</td>
+                    <td>26. Asy-Syu&#39;ara&#39; (227&nbsp;ayat)</td>
+                    <td>49. Al-Hujurat (18&nbsp;ayat)</td>
+                    <td>72. Al-Jin (28&nbsp;ayat)</td>
+                    <td>95. At-Tin (8&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>4. An-Nisa&#39; (176&nbsp;ayat)</td>
+                    <td>27. An-Naml (93&nbsp;ayat)</td>
+                    <td>50. Qaaf (45&nbsp;ayat)</td>
+                    <td>73. Al-Muzammil (20&nbsp;ayat)</td>
+                    <td>96. Al-&#39;Alaq (19&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>5. Al-Ma&#39;idah (120&nbsp;ayat)</td>
+                    <td>28. Al-Qasas (88&nbsp;ayat)</td>
+                    <td>51. Adz-dzariyat (60&nbsp;ayat)</td>
+                    <td>74. Al-Muddatstsir (56&nbsp;ayat)</td>
+                    <td>97. Al-Qadr (5&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>6. Al-An&rsquo;am (165&nbsp;ayat)</td>
+                    <td>29. Al-Ankabut (69&nbsp;ayat)</td>
+                    <td>52. Ath-Thuur (49&nbsp;ayat)</td>
+                    <td>75. Al-Qiyamah (40&nbsp;ayat)</td>
+                    <td>98. Al-Bayyinah (8&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>7. Al-A&#39;raf (206&nbsp;ayat)</td>
+                    <td>30. Ar-Ruu (60&nbsp;ayat)</td>
+                    <td>53. An-Najm (62&nbsp;ayat)</td>
+                    <td>76. Al-Insan (31&nbsp;ayat)</td>
+                    <td>99. Al-Zalzalah (8&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>8. Al-Anfal (75&nbsp;ayat)</td>
+                    <td>31. Luqman (34&nbsp;ayat)</td>
+                    <td>54. Al-Qamar (55&nbsp;ayat)</td>
+                    <td>77. Al-Mursalat (50&nbsp;ayat)</td>
+                    <td>100. Al-&#39;Adiyat (11&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>9. At-Taubah (129&nbsp;ayat)</td>
+                    <td>32. As-Sajdah (30&nbsp;ayat)</td>
+                    <td>55. Ar-Rahman (78&nbsp;ayat)</td>
+                    <td>78. An-Naba&#39; (40&nbsp;ayat)</td>
+                    <td>101. Al-Qari&#39;ah (11&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>10. Yunus (109&nbsp;ayat)</td>
+                    <td>33. Al-Ahzab (73&nbsp;ayat)</td>
+                    <td>56. Al-Waqi&#39;ah (96&nbsp;ayat)</td>
+                    <td>79. An-Nazi&#39;at (46&nbsp;ayat)</td>
+                    <td>102. At-Takatsur (8&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>11. Hud (123&nbsp;ayat)</td>
+                    <td>34. Saba&#39; (54&nbsp;ayat)</td>
+                    <td>57. Al-Hadid (29&nbsp;ayat)</td>
+                    <td>80. &#39;Abasa (42&nbsp;ayat)</td>
+                    <td>103. Al-&#39;Ashr (3&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>12. Yusuf (111&nbsp;ayat)</td>
+                    <td>35. Fatir (45&nbsp;ayat)</td>
+                    <td>58. Al-Mujadilah (22&nbsp;ayat)</td>
+                    <td>81. At-Takwir (29&nbsp;ayat)</td>
+                    <td>104. Al-Humazah (9&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>13. Ar-Ra&rsquo;d (43&nbsp;ayat)</td>
+                    <td>36. Ya sin (83&nbsp;ayat)</td>
+                    <td>59. Al-Hasyr (24&nbsp;ayat)</td>
+                    <td>82. Al-Infithar (19&nbsp;ayat)</td>
+                    <td>105. Al-Fil (5&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>14. Ibrahim (52&nbsp;ayat)</td>
+                    <td>37. Ash-Shaaffat (182&nbsp;ayat)</td>
+                    <td>60. Al-Mumtahanah (13&nbsp;ayat)</td>
+                    <td>83. Al-Muthaffifin (36&nbsp;ayat)</td>
+                    <td>106. Quraysh (4&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>15. Al-Hijr (99&nbsp;ayat)</td>
+                    <td>38. Shad (88&nbsp;ayat)</td>
+                    <td>61. Ash-shaf (14&nbsp;ayat)</span></td>
+                    <td>84. Al-Insyiqaq (25&nbsp;ayat)</td>
+                    <td>107. Al-Ma&#39;un (7&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>16. An-Nahl (128&nbsp;ayat)</td>
+                    <td>39. Az-Zumar (75&nbsp;ayat)</td>
+                    <td>62. Al-Jumu&#39;ah (11&nbsp;ayat)</td>
+                    <td>85. Al-Buruj (22&nbsp;ayat)</td>
+                    <td>108. Al-Kautsar (3&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>17. Al-Isra&#39; (111&nbsp;ayat)</td>
+                    <td>40. Al-Mu&#39;min (85&nbsp;ayat)</td>
+                    <td>63. Al-Munafiqun (11&nbsp;ayat)</td>
+                    <td>86. Ath-Thariq (17&nbsp;ayat)</td>
+                    <td>109. Al-Kafirun (6&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>18. Al-Kahfi (110&nbsp;ayat)</td>
+                    <td>41. Fushshilat (54&nbsp;ayat)</td>
+                    <td>64. At-taghabun (18&nbsp;ayat)</td>
+                    <td>87. Al-A&rsquo;laa (19&nbsp;ayat)</td>
+                    <td>110. An-Nashr (3&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>19. Maryam (98&nbsp;ayat)</td>
+                    <td>42. Asy-Syura (53&nbsp;ayat)</td>
+                    <td>65. Ath-Thalaq (12&nbsp;ayat)</td>
+                    <td>88. Al-Ghasyiyah (26&nbsp;ayat)</td>
+                    <td>111. Al-Lahab (5&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>20. Ta Ha (135&nbsp;ayat)</td>
+                    <td>43. Az-Zukhruf (89&nbsp;ayat)</td>
+                    <td>66. At-Tahrim (12&nbsp;ayat)</td>
+                    <td>89. Al-Fajr (30&nbsp;ayat)</td>
+                    <td>112. Al-Ikhlas (4&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>21. Al-Anbiya&#39; (112&nbsp;ayat)</td>
+                    <td>44. Ad-Dukhan (59&nbsp;ayat)</td>
+                    <td>67. Al-Mulk (30&nbsp;ayat)</td>
+                    <td>90. Al-Balad (20&nbsp;ayat)</td>
+                    <td>113. Al-Falaq (5&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>22. Al-Hajj (78&nbsp;ayat)</td>
+                    <td>45. Al-Jaatsiyah (37&nbsp;ayat)</td>
+                    <td>68. Al-Qalam (52&nbsp;ayat)</td>
+                    <td>91. Asy-Syams (15&nbsp;ayat)</td>
+                    <td>114. An-Nas (6&nbsp;ayat)</td>
+                </tr>
+                <tr>
+                    <td>23. Al-Mu&#39;minun (118&nbsp;ayat)</td>
+                    <td>46. Al-Ahqaf (35&nbsp;ayat)</td>
+                    <td>69. Al-Haqqah (52&nbsp;ayat)</td>
+                    <td>92. Al-Lail (21&nbsp;ayat)</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </section>
+</body>
+</html>
